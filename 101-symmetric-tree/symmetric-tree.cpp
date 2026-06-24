@@ -23,7 +23,7 @@ public:
 
     bool isSymmetric(TreeNode* root) {
         if(root==NULL)
-            return NULL;
+            return false;
         return isMirror(root->left,root->right);
     }
 };
