@@ -15,7 +15,7 @@ public:
         return buildTree(nums, 0, nums.size()-1);
     }
     private:
-        TreeNode* buildTree(vector<int> nums, int left, int right ){
+        TreeNode* buildTree(vector<int>& nums, int left, int right ){
             if(left>right)
                 return NULL;
             int mid = left + (right-left)/2;
