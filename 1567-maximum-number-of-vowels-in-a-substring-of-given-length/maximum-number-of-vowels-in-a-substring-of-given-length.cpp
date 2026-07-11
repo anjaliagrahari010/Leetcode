@@ -6,14 +6,14 @@ public:
         return false;
     }
     int maxVowels(string s, int k) {
-        int maxV= 0;
         int count=0;
         for(int i=0;i<k;i++){
             if(isVowel(s[i])){
                 count++;
             }
-            maxV=max(maxV,count);
+           
         }
+        int maxV=count;
         for(int i=k;i<s.size();i++){
             if(isVowel(s[i-k])){
                 count--;
