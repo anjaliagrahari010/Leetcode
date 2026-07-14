@@ -6,9 +6,11 @@ public:
         string ans="";
         while(ss>>word){
             reverse(word.begin(),word.end());
-            ans+=word+" "; 
+            if(!ans.empty())
+                ans+=" ";
+            ans+=word; 
         }
-        ans.pop_back();
+        
         return ans;
     }
 };
